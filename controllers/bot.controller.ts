@@ -17,7 +17,7 @@ const KEYBOARDS = {
       ],
       [{ 
         text: "Source Code ↗️", 
-        url: `https://t.me/UGxMaster`
+        url: "https://t.me/UGxMaster"
       }],
     ]
   } satisfies InlineKeyboardMarkup,
@@ -31,7 +31,7 @@ const KEYBOARDS = {
       ],
       [{ 
         text: "Source Code ↗️", 
-        url: `https://github.com/`
+        url: "https://github.com/"
       }],
     ]
   } satisfies InlineKeyboardMarkup,
@@ -44,7 +44,7 @@ const KEYBOARDS = {
       ],
       [{ 
         text: "Source Code ↗️", 
-        url: `https://github.com/`
+        url: "https://github.com/"
       }],
     ]
   } satisfies InlineKeyboardMarkup,
@@ -59,7 +59,7 @@ const KEYBOARDS = {
       ],
       [{ 
         text: "Source Code ↗️", 
-        url: `https://github.com/`
+        url: "https://github.com/"
       }],
     ]
   } satisfies InlineKeyboardMarkup
@@ -75,7 +75,7 @@ export const BotController = {
     }
   },
 
-  private async handleMessage(message: TelegramMessage) {
+  async handleMessage(message: TelegramMessage) {
     const { chat, from, text } = message;
     if (!text || !from) return;
 
@@ -86,7 +86,7 @@ export const BotController = {
     }
   },
 
-  private async handleStartCommand(chatId: number, userId: number) {
+  async handleStartCommand(chatId: number, userId: number) {
     try {
       const isSubscribed = await SubscriptionService.checkSubscription(userId);
       
@@ -129,7 +129,7 @@ export const BotController = {
     }
   },
 
-  private async handleUsersCommand(chatId: number) {
+  async handleUsersCommand(chatId: number) {
     try {
       const userCount = await UserRepository.countUsers();
       const responseText = USE_DB
@@ -150,7 +150,7 @@ export const BotController = {
     }
   },
 
-  private async handleCallback(callback: TelegramCallbackQuery) {
+  async handleCallback(callback: TelegramCallbackQuery) {
     if (!callback.message || !callback.data) return;
     
     const { message, from, data } = callback;
