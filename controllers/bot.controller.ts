@@ -93,7 +93,7 @@ export const BotController = {
       if (!isSubscribed) {
         return TelegramService.sendMessage(
           chatId,
-          "❌ *Please join our channel to use this bot:* [@NexonBots](https://t.me/ItsUGPro)",
+          "❌ *Please join our channel to use this bot:* [@ItsUGPro](https://t.me/ItsUGPro)",
           {
             parse_mode: "Markdown",
             reply_markup: KEYBOARDS.joinChannel,
