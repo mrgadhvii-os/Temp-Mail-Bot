@@ -12,12 +12,12 @@ const KEYBOARDS = {
       [
         { 
           text: "> Updates Channel <", 
-          url: "https://t.me/NexonBots" 
+          url: "https://t.me/ItsUGPro" 
         }
       ],
       [{ 
         text: "Source Code ↗️", 
-        url: `https://github.com/Private-Bots-Official/Temp-Mail-Bot`
+        url: `https://t.me/UGxMaster`
       }],
     ]
   } satisfies InlineKeyboardMarkup,
@@ -31,7 +31,7 @@ const KEYBOARDS = {
       ],
       [{ 
         text: "Source Code ↗️", 
-        url: `https://github.com/Private-Bots-Official/Temp-Mail-Bot`
+        url: `https://github.com/`
       }],
     ]
   } satisfies InlineKeyboardMarkup,
@@ -44,7 +44,7 @@ const KEYBOARDS = {
       ],
       [{ 
         text: "Source Code ↗️", 
-        url: `https://github.com/Private-Bots-Official/Temp-Mail-Bot`
+        url: `https://github.com/`
       }],
     ]
   } satisfies InlineKeyboardMarkup,
@@ -59,7 +59,7 @@ const KEYBOARDS = {
       ],
       [{ 
         text: "Source Code ↗️", 
-        url: `https://github.com/Private-Bots-Official/Temp-Mail-Bot`
+        url: `https://github.com/`
       }],
     ]
   } satisfies InlineKeyboardMarkup
@@ -93,7 +93,7 @@ export const BotController = {
       if (!isSubscribed) {
         return TelegramService.sendMessage(
           chatId,
-          "❌ *Please join our channel to use this bot:* [@NexonBots](https://t.me/NexonBots)",
+          "❌ *Please join our channel to use this bot:* [@NexonBots](https://t.me/ItsUGPro)",
           {
             parse_mode: "Markdown",
             reply_markup: KEYBOARDS.joinChannel,
