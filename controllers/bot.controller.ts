@@ -54,7 +54,7 @@ const KEYBOARDS = {
       [
         { 
           text: "Join Channel", 
-          url: "https://t.me/NexonBots" 
+          url: "https://t.me/ItsUGPro" 
         }
       ],
       [{ 
